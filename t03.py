@@ -8,7 +8,7 @@ at = turtle.Turtle() # creates the turtle and sets its attributes
 at.pensize(6)
 
 size = 25
-
+at.speed(15)
 
 
 def build():
@@ -25,23 +25,24 @@ def build():
 
 def direction():
     """changes the position of the turtle"""
+    at.color("green") # changes the turtle to green
     at.penup()
     at.forward(10)
     at.right(90)
     at.forward(495)
     at.left(90)
     at.pendown()
-    for i in range(10):
+    for i in range(123):
 
-        at.forward(490)
+        at.forward(480)
         at.left(90)
         at.forward(2)
         at.left(90)
-        at.forward(490)
+        at.forward(480)
         at.right(90)
         at.forward(2)
         at.right(90)
-        at.forward(490)
+       # at.forward(485)
 build()
 direction()
 wn.exitonclick()
